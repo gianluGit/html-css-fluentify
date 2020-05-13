@@ -12,19 +12,12 @@ body {
 header {
   background-color: #191970;
   height: 400px;
-  position: relative;
+  background-image: url(../img/fluentify-jumbo.png);
+  background-size: 800px 300px;
+  background-repeat: no-repeat;
+  background-position: 105% 100%;
 }
 
-.jumbo-image {
-  height: 80%;
-  position: absolute;
-  bottom: 0;
-  right: -50px;
-}
-
-.jumbo-image img {
-  height: 100%;
-}
 
 
 .centratura {
@@ -122,17 +115,34 @@ nav::after {
 /*  */
 
 /* inizio main */
+
+/* prima parte main */
 .testo-centrato {
   background-color: lightgrey;
   height: 100px;
+  position: relative;
 }
 
-.main-container {
+
+.text-container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-container span {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* / */
+
+/* seconda parte main */
+.main-container.up {
   /* border-bottom: 1px solid grey; */
   /* debug */
-  height: 400px;
-  background-color: green;
-
+  /* background-color: green; */
+  border-bottom: 1px solid black;
 }
 
 /* regole contenitore per float */
@@ -148,8 +158,53 @@ nav::after {
   height: 100%;
   width: calc(100% / 3);
   /* debug */
-  background-color: yellow;
-  border: 1px solid black;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 100px;
+}
+
+
+.left h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.left p {
+  text-align: center;
+}
+
+.middle h2 {
+  text-align: center;
+  margin: 20px 0;
+
+}
+
+
+.middle p {
+  text-align: center;
+}
+
+.right h2 {
+  text-align: center;
+  margin: 20px 0;
+
+}
+
+
+.right p {
+  text-align: center;
+}
+
+
+/* /fine seconda parte main */
+
+.down {
+  height: 400px;
 }
 
 .block-down {
