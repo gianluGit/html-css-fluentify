@@ -1,0 +1,162 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* inizio header */
+header {
+  background-color: #191970;
+  height: 400px;
+  position: relative;
+}
+
+.jumbo-image {
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+}
+
+.jumbo-image img {
+  height: 100%;
+}
+
+
+.centratura {
+  padding: 10px 70px;
+}
+
+nav {
+  height: 60px;
+}
+
+/* regole per float */
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*  */
+
+.title-page h1 {
+  color: white;
+}
+
+.title-page {
+  margin-top: 60px;
+}
+
+.link-container {
+  float: left;
+}
+
+.title-logo {
+  width: 10%;
+}
+
+
+.link-list {
+  width: 30%;
+  line-height: 60px;
+  text-align: center;
+}
+
+.link-list ul, .link-list li {
+  display: inline-block;
+}
+
+.link-list li {
+  margin-left: 10px;
+}
+
+.link-list ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.login {
+  width: 60%;
+  line-height: 60px;
+  text-align: center;
+}
+
+.login a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+#login-button {
+  font-size: 20px;
+  background-color: inherit;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+#struttura-button {
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.login a, .login button {
+  margin-left: 10px;
+}
+
+/*  */
+
+/* inizio main */
+.testo-centrato {
+  background-color: lightgrey;
+  height: 100px;
+}
+
+.main-container {
+  /* border-bottom: 1px solid grey; */
+  /* debug */
+  height: 400px;
+  background-color: green;
+
+}
+
+/* regole contenitore per float */
+.main-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*  */
+
+.block {
+  float: left;
+  height: 100%;
+  width: calc(100% / 3);
+  /* debug */
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+.block-down {
+  float: left;
+  height: 100%;
+  width: calc(100% / 2);
+  /* debug */
+  background-color: pink;
+  border: 1px solid black;
+}
